@@ -1,0 +1,24 @@
+COMO CREAR UN SERVIDOR DESDE TERMINAL DE BASH
+
+
+1 npm init (inicializo un proyecto de node)
+2 nombre con o sin guiones
+3 npm init -y (acepta todo lo q viene por defecto de package.json)
+4 npm i express (instala framework express)
+5 npm unistall expless (desintala framework en caso de error de tipeo)
+6 en app.js es donde tiene la logica del servidor
+
+en app.js escribir el siguiente codigo:
+
+
+const express = require("express");
+
+const app = express();
+
+app.get("/",(req,res)=>res.send("Bienvenido a tu servidor :D") )
+
+app.listen(3030, () => console.log("Servidor funcionando en puerto 3030"))
+
+
+//CON ESTO YA TENDRIAMOS EL SERVIDOR FUNCIONANDO//
+
